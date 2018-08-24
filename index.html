@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Analisis Indoor</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!--navegacion-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="https://www.osiptel.gob.pe/">
+    <img src="images/osiptel.png" alt="" style="width:30%">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="https://www.osiptel.gob.pe/">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tu Osiptel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Usuarios</a>
+      </li>
+      <li class="nav-item">
+        <form class="form-inline ml-auto">
+    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+    <button class="btn btn-outline-primary my-1 my-sm-0" type="submit">Buscar</button>
+  </form>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--header-->
+<header class="main-header">
+  <div class="background-overlay text-white px-5 py-5">
+      <div class="row" id="total">
+        <div class="col-lg-6 text-center justify-content-center align-self-center" id="info">
+          <h1>ANÁLISIS DE SEÑAL INDOOR</h1>
+          <hr>
+          <ul class="list-unstyled">
+  Recurso de apelación para usuarios de telefonía móvil:<br><br>
+    <ul>
+      <li><i class="fa fa-check"> Eficaz</i><br></li>
+      <li><i class="fa fa-check"> Seguro</i><br></li>
+      <li><i class="fa fa-check"> Confidencial</i></li>
+    </ul>
+</ul>
+        </div>
+        <div class="col-md-6 " id="imagen">
+            <img src="images/cel.jpg" alt="" class="img-fluid d-none d-sm-block" style="width:60%">
+        </div>
+      </div>
+  </div>
+</header>
+<!--información-->
+<section class="bg-light text-center">
+  <div class="container">
+    <div class="row">
+      <div class="m-5">
+        <h3 class="text-primary">¿En qué consiste?</h3>
+        <hr>
+        <p>Es un recurso de apelación para los usuarios de telefonía móvil que no
+            quedan satisfechos por las respuestas de sus proveedores frente al
+            reclamo presentado, reclamo que consiste en la pobre disponibilidad
+            del servicio dentro de edificios o parte de ellos, conocido como cobertura
+            indoor, la propuesta consiste en reunir los datos del cliente y la
+            indisponibilidad del servicio.</p>
+            <hr>
+      </div>
+    </div>
+  </div>
+</section>
+<!--agregar la queja-->
+<section class="bg-light py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <h3 class="text-primary">Ingrese su queja</h3>
+        <hr>
+        <form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <i class="fa fa-user input-group-text"></i>
+            </div>
+            <input type="text" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <i class="fa fa-envelope input-group-text"></i>
+            </div>
+            <input type="email" class="form-control" placeholder="ejemplo@gmail.com">
+          </div>
+          <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>¿Hogar o empresa?</option>
+            <option value="1">No cuento con cobertura en mi hogar</option>
+            <option value="2">No cuento con cobertura en mi empresa</option>
+          </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <select class="custom-select" id="inputGroupSelect02">
+            <option selected>¿Qué tipo de problema desea solucionar?</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="input-group-append">
+            <label class="input-group-text" for="inputGroupSelect02">Elegir</label>
+          </div>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect03">Departamento</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect03" aria-label="Example select with button addon">
+            <option selected>Seleccionar...</option>
+            <option value="1">Amazonas</option>
+            <option value="2">Áncash</option>
+            <option value="3">Apurimac</option>
+            <option value="4">Arequipa</option>
+            <option value="5">Ayacucho</option>
+            <option value="6">Cajamarca</option>
+            <option value="7">Callao</option>
+            <option value="8">Cuzco</option>
+            <option value="9">Huancavelica</option>
+            <option value="10">Huánuco</option>
+            <option value="11">Ica</option>
+            <option value="12">Junin</option>
+            <option value="13">La Libertad</option>
+            <option value="14">Lambayeque</option>
+            <option value="15">Lima</option>
+            <option value="16">Loreto</option>
+            <option value="17">Madre de Dios</option>
+            <option value="18">Moquegua</option>
+            <option value="19">Pasco</option>
+            <option value="20">Piura</option>
+            <option value="21">Puno</option>
+            <option value="22">San Martin</option>
+            <option value="23">Tacna</option>
+            <option value="24">Tumbes</option>
+            <option value="25">Ucayali</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <i class="fa fa-pencil input-group-text" ></i>
+          </div>
+          <textarea name="" id="" cols="30" rows="5" placeholder="Ingrese alguna queja extra" class="form-control"></textarea>
+        </div>
+        <button class="btn btn-primary btn-md btn-block">
+          <i class="fa fa-share-square"></i>
+        Enviar
+        </button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container p-3 text-right">
+    <p class="text-primary">Copyright &copy; 2018</p>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
